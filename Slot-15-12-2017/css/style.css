@@ -1,0 +1,80 @@
+body {
+  	margin: 0;
+  	padding: 0;
+  	background-color: #000;
+}
+
+.pipboy {
+	position: relative;
+	width: 900px;
+	height: 667px;
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+#main {
+	width: 630px;
+	height: 390px;
+	top: 100px;
+	left: 125px;
+	position: relative;
+	background-image: url(../img/standby.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.shadow {
+	position: relative;
+	top: -300px;
+	left: 125px;
+	width: 630px;
+	height: 390px;
+	box-shadow:
+		inset 0px 50px 20px 30px rgba(0, 0, 0, 0.9),
+		inset 0px -50px 20px 30px rgba(0, 0, 0, 0.9);
+}
+	
+#launch {
+	position: relative;
+	bottom: 240px;
+	left: 322.5px;
+	height: 64px;
+	width: 219.5px;
+	background: radial-gradient(ellipse at 60% 30%, #feff8a, #fa700e);
+	border: 0px solid #4e5132;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px #fa700e;
+	font-size: 20px;
+	color: #fa700e;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #feff8a;
+	font-weight: bold;
+	user-select: none;
+}
+
+#launch:disabled {
+	background: radial-gradient(ellipse at 60% 30%, #b6b6b6, #5d5d5d);
+	box-shadow: 0px 0px 15px 0px #5d5d5d;
+	color: #656565;
+	text-shadow: 1px 1px 0px #c8c8c8;
+}
+	
+canvas {
+	border: 1px solid #2e2e2e;
+}
+
+#bet__block {
+	position: absolute;
+	bottom: 175px;
+	left: 50%;
+	transform: translateX(-54%);
+	width: 350px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 1);
+	border: 1px solid #232323;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
